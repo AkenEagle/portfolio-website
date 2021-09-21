@@ -1,2 +1,4 @@
 # portfolio-website
-A portfolio website about myself.
+
+## WORK IN PROGRESS
+LIVE LINK: [click here]()
