@@ -51,6 +51,7 @@ header a {
     justify-content: space-between;
 }
 
+/* Style for banner image */
 .banner {
     display: flex;
     width: 100%;
@@ -62,7 +63,19 @@ header a {
     align-items: center;
 }
 
-.banner h1 {
+/* Style for title on the banner image */
+.banner h2 {
     font-size: 3rem;
-    margin-left: 9.5rem;
+    margin-left: 10rem;
+}
+
+/* Style for each content section */
+.content {
+    display: flex;
+    margin: 3rem 10rem;
+}
+
+/* Style for title of the content sections */
+.content h3 {
+    font-size: 2.5rem;
 }
