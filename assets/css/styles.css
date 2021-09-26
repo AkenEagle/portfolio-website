@@ -8,7 +8,6 @@
 :root {
     --black: #000000;
     --darkGrey: #333333;
-    --grey:	#979797;
     --light: #f5f5f7;
     --red: #E50914;
 }
@@ -153,8 +152,8 @@ header a {
     font-size: 1.3rem;
 }
 
-/* Style for flex boxes */
-.first-project, .project2, .project3, .project4 {
+/* Style for all projects */
+.first-project, .other-project {
     position: relative;
     border-style: solid;
     border-color: var(--darkGrey);
@@ -163,6 +162,6 @@ header a {
     transition-duration: 0.2s;
 }
 
-.first-project:hover, .project2:hover, .project3:hover, .project4:hover {
+.first-project:hover, .other-project:hover {
     filter: brightness(100%);
 }
