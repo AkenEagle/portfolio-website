@@ -34,6 +34,7 @@ header {
     padding: 0.8rem 10rem;
     align-items: center;
     justify-content: space-between;
+    z-index: 999;
 }
 
 /* Style for links in header (including h1) */
@@ -113,23 +114,18 @@ header a {
     text-shadow: 0rem 0rem 0.7rem var(--red);
 }
 
-/* Style for each box in My Work section */
-#my-work .content-box div {
-    border-style: solid;
-    border-color: var(--darkGrey);
-    border-width: 0.5rem;
-    filter: brightness(50%);
-    transition-duration: 0.2s;
+/* Style for flexbox in My work */
+#my-work .content-box {
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-#my-work .content-box div:hover {
-    filter: brightness(100%);
-}
-
-/* Style for First project in Work section */
+/* Style for first box in My Work section */
 .first-project {
     height: 30rem;
     width: 100%;
+    margin-bottom: 3rem;
 }
 
 /* To fit and position the image properly */
@@ -138,5 +134,35 @@ header a {
     height: 100%;
     object-fit: cover;
     object-position: 0% 0%;
-    
+}
+
+/* Style for project information */
+.project-info {
+    background-color: var(--darkGrey);
+    color: var(--light);
+    padding: 0.8rem;
+    position: absolute;
+    bottom: 10%;
+}
+
+.project-info h4 {
+    font-size: 2rem;
+}
+
+.project-info p {
+    font-size: 1.3rem;
+}
+
+/* Style for flex boxes */
+.first-project, .project2, .project3, .project4 {
+    position: relative;
+    border-style: solid;
+    border-color: var(--darkGrey);
+    border-width: 0.5rem;
+    filter: brightness(50%);
+    transition-duration: 0.2s;
+}
+
+.first-project:hover, .project2:hover, .project3:hover, .project4:hover {
+    filter: brightness(100%);
 }
