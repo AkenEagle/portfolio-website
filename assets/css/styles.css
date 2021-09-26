@@ -25,11 +25,10 @@ header {
     position: fixed;
     width: 100%;
     background-color: var(--black);
-    opacity: 0.8;
+    opacity: 0.9;
     padding: 0.8rem 10rem;
     align-items: center;
     justify-content: space-between;
-    backdrop-filter: saturate(180%) blur(20px);
 }
 
 /* Style for links in header (including h1) */
@@ -72,10 +71,16 @@ header a {
 /* Style for each content section */
 .content {
     display: flex;
-    margin: 3rem 10rem;
+    margin: 4rem 10rem;
 }
 
 /* Style for title of the content sections */
-.content h3 {
+.content-title {
     font-size: 2.5rem;
+}
+
+.content-box {
+    display: flex;
+    padding-left: 2rem;
+    border-left: 0.3rem solid var(--red);
 }
