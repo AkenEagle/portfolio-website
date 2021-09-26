@@ -36,10 +36,14 @@ header {
     z-index: 999;
 }
 
+/* Style for every link */
+a {
+    text-decoration: none;
+}
+
 /* Style for links in header (including h1) */
 header a {
     color: var(--light);
-    text-decoration: none;
     font-size: 1.3rem;
 }
 
@@ -49,7 +53,7 @@ header a {
 }
 
 /* Style for navbar links list */
-.navbar ul {
+ul {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
@@ -96,7 +100,7 @@ header a {
     align-items: center;
 }
 
-/* Style for About me image */
+/* Style for About me image, targeting using ID */
 #about-me img {
     border-radius: 50%;
 }
@@ -164,4 +168,17 @@ header a {
 
 .first-project:hover, .other-project:hover {
     filter: brightness(100%);
+    box-shadow: 0rem 0rem 0.8rem var(--red);
+}
+
+/* Style for Contact me section */
+#contact-me ul {
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
+
+/* To remove blue default color on links */
+#contact-me a {
+    color: var(--black)
 }
