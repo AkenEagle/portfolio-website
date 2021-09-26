@@ -58,6 +58,7 @@ ul {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
+    padding-inline-start: 0;
 }
 
 /* Style for banner image */
@@ -219,7 +220,6 @@ h4 {
 
     .navbar ul {
         display: block;
-        padding-inline-start: 0;
     }
 
     .navbar li {
@@ -298,6 +298,5 @@ h4 {
 
     #contact-me ul {
         justify-content: space-evenly;
-        padding-inline-start: 0;
     }
 }
