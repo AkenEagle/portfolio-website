@@ -127,8 +127,13 @@ ul {
     margin-bottom: 3rem;
 }
 
+.other-project {
+    height: 20rem;
+    width: 20rem;
+}
+
 /* To fit and position the image properly */
-.first-project img {
+.first-project img, .other-project img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -250,7 +255,7 @@ h4 {
     }
 
     #about-me img {
-        height: 175px;
+        height: 17.5rem;
         display: block;
         margin-right: auto;
         margin-left: auto;
@@ -274,6 +279,7 @@ h4 {
 
     .other-project {
         height: 15rem;
+        width: 100%;
     }
 
     .other-project img {
