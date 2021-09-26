@@ -71,16 +71,38 @@ header a {
 /* Style for each content section */
 .content {
     display: flex;
-    margin: 4rem 10rem;
+    margin: 4rem 7rem;
 }
 
 /* Style for title of the content sections */
 .content-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    width: 15%;
+    text-align: right;
+    margin-right: 1rem;
 }
 
+/* Style for content box */
 .content-box {
     display: flex;
+    width: 85%;
     padding-left: 2rem;
     border-left: 0.3rem solid var(--red);
+    align-items: center;
+}
+
+/* Style for About me image */
+#about-me img {
+    border-radius: 50%;
+}
+
+#about-me p {
+    margin-left: 2rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    transition-duration: 0.2s;
+}
+
+#about-me p:hover {
+    text-shadow: 0rem 0rem 0.7rem var(--red);
 }
