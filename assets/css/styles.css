@@ -76,7 +76,8 @@ ul {
 /* Style for title on the banner image */
 .banner h2 {
     font-size: 3rem;
-    margin-left: 10rem;
+    width: 100%;
+    text-align: center;
     text-shadow: 0rem 0rem 0.5rem var(--black);
 }
 
@@ -232,7 +233,6 @@ h4 {
     }
 
     .banner h2 {
-        margin-left: 1.5rem;
         font-size: 1.2rem;
     }
 
