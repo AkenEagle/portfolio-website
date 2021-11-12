@@ -193,6 +193,11 @@ h4 {
   color: var(--black);
 }
 
+/* Spacing between icon and text */
+#contact-me i {
+  margin-right: 10px;
+}
+
 /* Duration of transitions */
 #contact-me a,
 .first-project,
@@ -316,7 +321,13 @@ h4 {
   }
 
   #contact-me ul {
+    flex-direction: column;
+    text-align: center;
     justify-content: space-evenly;
+  }
+
+  #contact-me li {
+    margin-bottom: 30px;
   }
 }
 
