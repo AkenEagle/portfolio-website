@@ -1,322 +1,332 @@
 /* CSS Resets */
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* Color variables */
 :root {
-    --black: #000000;
-    --darkGrey: #333333;
-    --light: #f5f5f7;
-    --red: #E50914;
+  --black: #000000;
+  --darkGrey: #333333;
+  --light: #f5f5f7;
+  --red: #e50914;
 }
 
 /* For smooth scrolling when clicking links */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    /* Default font size to use with REM */
-    font-size: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--light);
-    animation: colorize 1s;
+  /* Default font size to use with REM */
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--light);
+  animation: colorize 1s;
 }
 
 header {
-    white-space: nowrap;
-    display: flex;
-    position: fixed;
-    width: 100%;
-    background-color: var(--black);
-    opacity: 0.9;
-    padding: 0.8rem 10rem;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 999;
-    animation-name: unblur;
-    animation-duration: 0.3s;
+  white-space: nowrap;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: var(--black);
+  opacity: 0.9;
+  padding: 0.8rem 10rem;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+  animation-name: unblur;
+  animation-duration: 0.3s;
 }
 
 /* Style for every link */
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Style for links in header (including h1) */
 header a {
-    color: var(--light);
-    font-size: 1.3rem;
+  color: var(--light);
+  font-size: 1.3rem;
 }
 
 /* Navbar */
 .navbar {
-    width: 30rem;
+  width: 30rem;
 }
 
 /* Style for navbar links and contact me list */
 ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-    padding-inline-start: 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding-inline-start: 0;
 }
 
 /* Style for banner image */
 .banner {
-    display: flex;
-    width: 100%;
-    height: 30rem;
-    background-image: url('../images/banner.jpg');
-    color: var(--light);
-    background-size: cover;
-    background-position: center;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  height: 30rem;
+  background-image: url("../images/banner.jpg");
+  color: var(--light);
+  background-size: cover;
+  background-position: center;
+  align-items: center;
 }
 
 /* Style for title on the banner image */
 .banner h2 {
-    font-size: 3rem;
-    width: 100%;
-    text-align: center;
-    text-shadow: 0rem 0rem 0.5rem var(--black);
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0rem 0rem 0.5rem var(--black);
 }
 
 /* Style for each content section */
 .content {
-    display: flex;
-    margin: 4rem 7rem;
+  display: flex;
+  margin: 4rem 7rem;
 }
 
 /* Style for title of the content sections */
 .content-title {
-    font-size: 2rem;
-    width: 15%;
-    text-align: right;
-    margin-right: 1rem;
+  font-size: 2rem;
+  width: 15%;
+  text-align: right;
+  margin-right: 1rem;
 }
 
 /* Style for content box */
 .content-box {
-    display: flex;
-    width: 85%;
-    padding-left: 2rem;
-    border-left: 0.3rem solid var(--red);
-    align-items: center;
+  display: flex;
+  width: 85%;
+  padding-left: 2rem;
+  border-left: 0.3rem solid var(--red);
+  align-items: center;
 }
 
 /* Style for About me image, targeting using ID */
 #about-me img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 /* Style for paragraph in about me section */
 #about-me p {
-    margin-left: 2rem;
-    font-size: 1.4rem;
-    line-height: 2.2rem;
+  margin-left: 2rem;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
 }
 
 /* Style for flexbox in My work */
 #my-work .content-box {
-    flex-grow: 1;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /* Style for first box in My Work section */
 .first-project {
-    height: 30rem;
-    width: 100%;
-    margin-bottom: 3rem;
+  height: 30rem;
+  width: 100%;
+  margin-bottom: 3rem;
 }
 
 .other-project {
-    height: 20rem;
-    width: 20rem;
+  height: 20rem;
+  width: 20rem;
 }
 
 /* To fit and position the image properly */
-.first-project img, .other-project img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 0% 0%;
+.first-project img,
+.other-project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0% 0%;
 }
 
 /* Style for project information */
 .project-info {
-    background-color: var(--darkGrey);
-    color: var(--light);
-    padding: 0.8rem;
-    position: absolute;
-    bottom: 10%;
+  background-color: var(--darkGrey);
+  color: var(--light);
+  padding: 0.8rem;
+  position: absolute;
+  bottom: 10%;
 }
 
 h4 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .project-info p {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 /* Style for all projects */
-.first-project, .other-project {
-    position: relative;
-    border-style: solid;
-    border-color: var(--darkGrey);
-    border-width: 0.5rem;
-    filter: brightness(50%);
+.first-project,
+.other-project {
+  position: relative;
+  border-style: solid;
+  border-color: var(--darkGrey);
+  border-width: 0.5rem;
+  filter: brightness(50%);
 }
 
 /* Shadow and brighten up for project boxes */
-.first-project:hover, .other-project:hover {
-    filter: brightness(100%);
-    box-shadow: 0rem 0rem 0.8rem var(--red);
+.first-project:hover,
+.other-project:hover {
+  filter: brightness(100%);
+  box-shadow: 0rem 0rem 0.8rem var(--red);
 }
 
 /* Style for Contact me section */
 #contact-me ul {
-    width: 100%;
-    justify-content: space-evenly;
-    font-size: 1.5rem;
+  width: 100%;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
 }
 
 /* To remove blue default color on links */
 #contact-me a {
-    color: var(--black)
+  color: var(--black);
 }
 
 /* Duration of transitions */
-#contact-me a, #about-me p, .first-project, .other-project {
-    transition-duration: 0.2s;
+#contact-me a,
+.first-project,
+.other-project {
+  transition-duration: 0.2s;
 }
 
-#contact-me a:hover, #about-me p:hover {
-    text-shadow: 0rem 0rem 0.7rem var(--red);
+#contact-me a:hover {
+  text-shadow: 0rem 0rem 0.7rem var(--red);
 }
 
 /* Mobile view */
 @media screen and (max-width: 900px) {
-    header {
-        position: static;
-        text-align: center;
-        display: block;
-        padding: 1rem 1rem;
-    }
+  header {
+    position: static;
+    text-align: center;
+    display: block;
+    padding: 1rem 1rem;
+  }
 
-    header h1 {
-        line-height: 4rem;
-    }
+  header h1 {
+    line-height: 4rem;
+  }
 
-    header h1 a {
-        font-size: 2rem;
-    }
+  header h1 a {
+    font-size: 2rem;
+  }
 
-    .navbar {
-        width: max-content;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
+  .navbar {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 
-    .navbar ul {
-        display: block;
-    }
+  .navbar ul {
+    display: block;
+  }
 
-    .navbar li {
-        line-height: 3rem;
-    }
+  .navbar li {
+    line-height: 3rem;
+  }
 
-    .banner {
-        height: 10rem;
-    }
+  .banner {
+    height: 10rem;
+  }
 
-    .banner h2 {
-        font-size: 1.2rem;
-    }
+  .banner h2 {
+    font-size: 1.2rem;
+  }
 
-    .content {
-        display: block;
-        margin: 3rem 1.7rem;
-    }
+  .content {
+    display: block;
+    margin: 3rem 1.7rem;
+  }
 
-    .content-title {
-        width: 100%;
-        font-size: 1.5rem;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
+  .content-title {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
 
-    .content-box {
-        display: block;
-        width: 100%;
-        border-left: 0;
-        padding-left: 0;
-    }
+  .content-box {
+    display: block;
+    width: 100%;
+    border-left: 0;
+    padding-left: 0;
+  }
 
-    .project-info h4 {
-        font-size: 1.5rem;
-        line-height: 3rem;
-    }
+  .project-info h4 {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
 
-    .project-info p {
-        font-size: 1rem;
-    }
+  .project-info p {
+    font-size: 1rem;
+  }
 
-    #about-me img {
-        height: 17.5rem;
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 2rem;
-    }
+  #about-me img {
+    height: 17.5rem;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+  }
 
-    #about-me p {
-        text-align: center;
-        margin-left: 0;
-        font-size: 1rem;
-        line-height: 1.7rem;
-    }
+  #about-me p {
+    text-align: center;
+    margin-left: 0;
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
 
-    .first-project, .other-project {
-        filter: brightness(100%);
-    }
+  .first-project,
+  .other-project {
+    filter: brightness(100%);
+  }
 
-    .first-project {
-        height: 25rem;
-    }
+  .first-project {
+    height: 25rem;
+  }
 
-    .other-project {
-        height: 15rem;
-        width: 100%;
-    }
+  .other-project {
+    height: 15rem;
+    width: 100%;
+  }
 
-    .other-project img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
+  .other-project img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
 
-    #my-work .content-box {
-        justify-content: center;
-    }
+  #my-work .content-box {
+    justify-content: center;
+  }
 
-    .other-project {
-        margin-top: 3rem;
-    }
+  .other-project {
+    margin-top: 3rem;
+  }
 
-    #contact-me ul {
-        justify-content: space-evenly;
-    }
+  #contact-me ul {
+    justify-content: space-evenly;
+  }
 }
 
 /* Animation defines */
 
 @keyframes colorize {
-    from   {filter: grayscale(100%);}
-    to {filter: grayscale(0%);}
+  from {
+    filter: grayscale(100%);
+  }
+  to {
+    filter: grayscale(0%);
+  }
 }
