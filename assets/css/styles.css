@@ -21,6 +21,7 @@ body {
   /* Default font size to use with REM */
   font-size: 10px;
   font-family: Arial, Helvetica, sans-serif;
+  color: var(--black);
   background-color: var(--light);
   animation: colorize 1s;
 }
@@ -60,7 +61,7 @@ header a {
 ul {
   display: flex;
   list-style-type: none;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-inline-start: 0;
 }
 
@@ -122,9 +123,8 @@ ul {
 
 /* Style for flexbox in My work */
 #my-work .content-box {
-  flex-grow: 1;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .card {
@@ -134,12 +134,18 @@ ul {
   overflow: hidden;
   box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 1em;
+  margin-bottom: 2rem;
+  width: 45%;
+}
+
+.card:hover {
+  box-shadow: 0rem 0rem 0.7rem var(--red);
 }
 
 .card img {
   object-fit: cover;
-  object-position: 0% 0%;
-  height: 30rem;
+  object-position: 50% 0%;
+  height: 25rem;
 }
 
 .card-info {
@@ -150,7 +156,7 @@ ul {
   position: absolute;
   bottom: 0;
   padding: 1rem 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   background-color: var(--darkGrey);
 }
 
@@ -160,6 +166,16 @@ ul {
 
 .card-info a {
   color: var(--light);
+}
+
+#main-project,
+#main-project .card-info {
+  width: 100%;
+  font-size: 2rem;
+}
+
+#main-project img {
+  height: 30rem;
 }
 
 h4 {
@@ -185,7 +201,8 @@ i {
 
 /* Duration of transitions */
 #contact-me a,
-.card-info a {
+.card-info a,
+.card {
   transition-duration: 0.2s;
 }
 
@@ -281,16 +298,25 @@ i {
     justify-content: center;
   }
 
+  .card {
+    width: 100%;
+  }
+
   .card-info,
   .card-info ul {
     text-align: center;
     width: 100%;
-    flex-direction: column;
+    align-items: center;
   }
 
-  .card-info h4,
+  .card-info p,
   .card-info li {
     margin-bottom: 1rem;
+  }
+
+  #main-project .card-info,
+  #main-project ul {
+    flex-direction: column;
   }
 
   #contact-me ul {
