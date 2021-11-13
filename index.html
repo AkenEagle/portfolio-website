@@ -1,128 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Harmanjot Singh</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
-</head>
 
-<body>
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body>
     <header>
-        <h1><a href="./">Harmanjot Singh</a></h1>
+      <h1><a href="./">Harmanjot Singh</a></h1>
 
-        <!-- Nav bar with anchor links -->
-        <nav class="navbar">
-            <ul>
-                <li>
-                    <a href="#about-me">About me</a>
-                </li>
-                <li>
-                    <a href="#my-work">My work</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact me</a>
-                </li>
-            </ul>
-        </nav>
+      <!-- Nav bar with anchor links -->
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="#about-me">About me</a>
+          </li>
+          <li>
+            <a href="#my-work">My work</a>
+          </li>
+          <li>
+            <a href="#contact-me">Contact me</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Banner area -->
     <div class="banner">
-        <h2>My portfolio website</h2>
+      <h2>Harmanjot Singh | Professional Portfolio</h2>
     </div>
 
     <!-- Main content area -->
     <main>
+      <!-- About me section -->
+      <section id="about-me" class="content">
+        <div class="content-title"><h3>About me</h3></div>
+        <div class="content-box">
+          <!-- Profile image here & paragraph about myself -->
+          <img
+            src="./assets/images/profile.jpeg"
+            alt="harmanjot singh profile picture"
+            height="300px"
+          />
+          <p>
+            I'm Harman, an ispiring full-stack Web Developer. Currently studying
+            at the Coding Bootcamp at University of Birmingham. I used the
+            skills learned to build this website and will continue to improved
+            it as I learn more.
+          </p>
+        </div>
+      </section>
 
-        <!-- About me section -->
-        <section id="about-me" class="content">
-            <div class="content-title"><h3>About me</h3></div>
-            <div class="content-box">
+      <!-- My work section -->
+      <section id="my-work" class="content">
+        <div class="content-title"><h3>My work</h3></div>
+        <div class="content-box">
 
-                <!-- Profile image here & paragraph about myself -->
-                <img src="./assets/images/profile.jpeg" alt="harmanjot singh profile picture" height="300px"/>
-                <p>I'm Harman, an ispiring full-stack Web Developer. Currently studying at the Coding Bootcamp at
-                    University of Birmingham. I used the skills learned to build this website and will continue to 
-                    improved it as I learn more.
-                </p>
-            </div>
-        </section>
-
-        <!-- My work section -->
-        <section id="my-work" class="content">
-            <div class="content-title"><h3>My work</h3></div>
-            <div class="content-box">
-
-                <!-- First project Box -->
-                <div class="first-project">
-
-                    <!-- First project Image -->
-                    <a href="https://akeneagle.github.io/html-css-refactor/" target="_blank">
-                        <img src="assets/images/first-project.png" alt="first project" />
-        
-                    <!-- Info about the project -->
-                    <div class="project-info">
-                        <h4>Code Refactor</h4>
-                        <p>Refactoring HTML & CSS</p>
-                    </div>
-                    </a>
-                </div>
-
-                <!-- Project 2 box -->
-                <div class="other-project">
-                    <a href="#my-work">
-                    <img src="assets/images/calculator-app.png" alt="calculator app" />
-                    <div class="project-info">
-                        <h4>Calculator App</h4>
-                        <p>A generic calculator app</p>
-                    </div>
-                    </a>
-                </div>
-
-                <!-- Project 3 box -->
-                <div class="other-project">
-                    <a href="#my-work">
-                    <img src="assets/images/web-browser.png" alt="web browser app" />
-                    <div class="project-info">
-                        <h4>Web Browser</h4>
-                        <p>A web browser</p>
-                    </div>
-                    </a>
-                </div>   
-                
-                <!-- Project 4 box -->
-                <div class="other-project">
-                    <a href="#my-work">
-                    <img src="assets/images/youtube-clone.png" alt="youtube clone app" />
-                    <div class="project-info">
-                        <h4>YouTube Clone</h4>
-                        <p>A YouTube clone</p>
-                    </div>
-                    </a>
-                </div>                  
-            </div>
-        </section>
-
-        <!-- Contact me section -->
-        <section id="contact-me" class="content">
-            <div class="content-title"><h3>Contact me</h3></div>
-            <div class="content-box">
+          <!-- Main project -->
+          <div class="card" id="main-project">
+              <img src="./assets/images/readers-revival.png"></img>
+              <div class="card-info">
+                <p>Readers Revival</p>
                 <ul>
-
-                    <!-- Linkedin -->
                     <li>
-                        <a href="https://www.linkedin.com/in/harman-s-7a749b159/" target="_blank">LinkedIn</a>
+                        <a href="https://asmaamusse.github.io/readers-revival/"
+                        target="_blank">
+                        <i class="fa-solid fa-rocket"></i>
+                        View Live</a>
                     </li>
 
-                    <!-- GitHub -->
                     <li>
-                        <a href="https://github.com/AkenEagle/" target="_blank">GitHub</a>
-                    </li>                    
+                        <a href="https://github.com/AsmaaMusse/readers-revival"
+                        target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        View Project</a>
+                    </li>
                 </ul>
+              </div>
+            </div> 
+
+            <!-- Work Day Scheduler -->
+          <div class="card">
+            <img src="./assets/images/work-day-scheduler.png"></img>
+            <div class="card-info">
+              <p>Work Day Scheduler</p>
+              <ul>
+                  <li>
+                      <a href="https://akeneagle.github.io/work-day-scheduler/index.html"
+                      target="_blank">
+                      <i class="fa-solid fa-rocket"></i>
+                      </a>
+                  </li>
+
+                  <li>
+                      <a href="https://github.com/AkenEagle/work-day-scheduler"
+                      target="_blank">
+                      <i class="fa-brands fa-github"></i>
+                      </a>
+                  </li>
+              </ul>
             </div>
-        </section>
+          </div> 
+
+          <!-- Code Quiz -->
+          <div class="card">
+            <img src="./assets/images/code-quiz.png"></img>
+            <div class="card-info">
+              <p>Code Quiz</p>
+              <ul>
+                  <li>
+                      <a href="https://akeneagle.github.io/code-quiz/"
+                      target="_blank">
+                      <i class="fa-solid fa-rocket"></i>
+                      </a>
+                  </li>
+
+                  <li>
+                      <a href="https://github.com/AkenEagle/code-quiz"
+                      target="_blank">
+                      <i class="fa-brands fa-github"></i>
+                      </a>
+                  </li>
+              </ul>
+            </div>
+          </div> 
+        </div>
+      </section>
+
+      <!-- Contact me section -->
+      <section id="contact-me" class="content">
+        <div class="content-title"><h3>Contact me</h3></div>
+        <div class="content-box">
+          <ul>
+            <!-- Email -->
+            <li><i class="fa-solid fa-envelope"></i>akeneagle@gmail.com</li>
+
+            <!-- Linkedin -->
+            <li>
+              <a
+                href="https://www.linkedin.com/in/harman-s-7a749b159/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i>LinkedIn</a
+              >
+            </li>
+
+            <!-- GitHub -->
+            <li>
+              <a href="https://github.com/AkenEagle/" target="_blank"
+                ><i class="fa-brands fa-github"></i>GitHub</a
+              >
+            </li>
+
+            <!-- CV -->
+            <li>
+              <a href="./assets/files/cv.pdf" download
+                ><i class="fa-solid fa-file-pdf"></i>Download CV</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
